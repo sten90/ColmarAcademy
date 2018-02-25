@@ -1,0 +1,95 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+
+
+/* Global */
+html {
+  font-size: 16px;
+}
+html, p {
+  font-family: "Source Sans Pro", "Helvetica", sans-serif;
+}
+h2, h3, q {
+  font-family: Cambria, Times, serif;
+}
+@media only screen and (max-width: 620px) {
+  h2, h3, q {
+    font-family: inherit;
+  }
+}
+body {
+  margin: 0 auto;
+}
+.wrapper {
+  width: 100%;
+  background-color: hsl(0, 0%, 95%);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.20);
+  transition: all 300ms linear 30ms;
+}
+.wrapper:hover,
+.wrapper:focus,
+.wrapper:active {
+  z-index: 95;
+  background-color: hsl(0, 0%, 90%);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.30);
+}
+.flex {
+  display: flex;
+}
+.j-center {
+  justify-content: center;
+}
+.a-center {
+  align-items: center;
+}
+.bold-600 {
+  font-weight: 600;
+}
+.dark-gray {
+  color: hsl(0, 0%, 30%);
+}
+.med-gray {
+  color: hsl(0, 0%, 60%);
+}
+
+/* Header */
+.header {
+  position: fixed;
+  z-index: 100;
+  border-bottom: 1px solid lightgray;
+}
+header {
+  height: 4rem;
+  padding: 0 1.5rem;
+  width: auto;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.logo {
+  flex-grow: 1;
+}
+.logo img,
+.logo p {
+  display: inline-flex;
+}
+.logo img {
+  height: 2rem;
+  width: auto;
+}
+.logo p {
+  font-size: 1.2rem;
+}
+header nav img {
+  display: none;
+}
+header nav a.text {
+  text-decoration-line: none;
+  color: hsl(0, 0%, 30%);
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  transition: all 150ms linear 100ms;
+}
+header nav a.text:hover,
+header nav a.text:focus {
+  font-weight: bold;
+}
