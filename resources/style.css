@@ -93,3 +93,111 @@ header nav a.text:hover,
 header nav a.text:focus {
   font-weight: bold;
 }
+
+
+
+  /* Header - Mobile */
+  @media only screen and (max-width: 620px) {
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      min-width: 15rem;
+    }
+    header .logo,
+    header nav a.text {
+      display: none;
+    }
+    header nav a {
+      padding: 0 2rem;
+      transition: all 100ms linear 25ms;
+    }
+    header nav a:hover,
+    header nav a:focus {
+    color: white;
+    padding: 0.9rem 2rem;
+    background-color: hsl(0, 0%, 80%);
+    }
+    .header nav a:active {
+      transition: all 50ms linear 0ms;
+      color: white;
+      background-color: hsl(0, 0%, 80%);
+      box-shadow: 0px 0px 10px 0px rgba(117, 117, 117, 0.7);
+    }
+    header nav img {
+      display: inline-block;
+      height: 2rem;
+      width: auto;
+    }
+  }
+
+/* Banner */
+.banner-wrap {
+  position: relative;
+  top: 4rem;
+}
+.banner {
+  padding: 2rem 1.5rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.banner img {
+  width: 60%;
+}
+.banner article {
+  padding: 0 3rem;
+}
+.banner h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0;
+}
+.banner h3 {
+  line-height: 1.2;
+  padding: 2rem 0;
+}
+.banner .btn {
+  margin: 0 auto;
+  display: block;
+  width: 70%;
+  padding: 0.5rem 0;
+  text-align: center;
+  color: white;
+  background-color: hsl(0, 0%, 60%);
+  text-decoration-line: none;
+  line-height: 1.5;
+  opacity: 0.6;
+  transition: all 250ms linear 50ms;
+}
+.banner .btn:hover,
+.banner .btn:focus {
+  opacity: 1;
+  border-radius: 0;
+}
+
+  /* Banner - Mobile */
+  @media only screen and (max-width: 620px) {
+    .banner {
+      flex-direction: column;
+      align-items: unset;
+      padding: 0;
+    }
+    .banner img {
+      width: 100%;
+    }
+    .banner article {
+      padding: 2rem 1rem;
+    }
+    .banner h2 {
+      font-size: 3rem;
+      padding-bottom: 2rem;
+    }
+    .banner h3 {
+      font-size: 2rem;
+      padding: 0 0 1.5rem;
+    }
+    .banner .btn {
+      font-size: 2rem;
+    }
+  }
