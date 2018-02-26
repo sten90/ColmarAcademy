@@ -201,3 +201,220 @@ header nav a.text:focus {
       font-size: 2rem;
     }
   }
+
+
+  /* Information */
+  .infobox {
+    position: relative;
+    top: 4rem;
+  }
+  .info-box .mobile {
+    display: none;
+  }
+  .info {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  .info .main {
+    width: 60%;
+    padding-right: 1.5rem;
+    border-right: solid 2px hsl(0, 0%, 80%);
+  }
+  .info .main img {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .info .main h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .info .main q {
+    display: block;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.1;
+    padding-bottom: 2rem;
+  }
+  .info .main p {
+    font-size: 1rem;
+  }
+  .info .sidebar {
+    flex-direction: column;
+    width: 40%;
+    padding: 0;
+  }
+  .info-box {
+    width: 90%;
+    height: auto;
+    padding: 0;
+    opacity: 0.75;
+    transition: all 500ms linear 25ms;
+  }
+  .info-box:hover {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0rem;
+    opacity: 1;
+  }
+  .info-box img {
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+  }
+  .info-box .info-item h2 {
+    display: block;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .info-box .info-item p {
+    line-height: 1.3;
+    padding-bottom: 0.5rem;
+  }
+  .info-box .info-item a {
+    text-decoration-line: none;
+    color: hsl(0, 0%, 30%);
+    transition: all 100ms linear 25ms;
+  }
+  .info-box .info-item a:hover {
+    color: hsl(0, 0%, 0%);
+  }
+  .info-box .info-item a:active {
+    transition: all 5ms linear 2ms;
+    text-shadow: 1px 1px 1px hsl(0, 0%, 10%);
+  }
+
+    /* Information - Mobile */
+    @media only screen and (max-width: 620px) {
+      .info .sidebar {
+        width: 100%;
+        padding: 1rem;
+      }
+      .info .main {
+        display: none;
+      }
+      .info .mobile {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 0 0 1rem;
+      }
+      .info-box {
+        margin: 0 auto;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: unset;
+        margin-bottom: 1rem;
+        background-color: hsl(0, 0%, 95%);
+      }
+      .info-box img {
+        display:  none;
+      }
+      .info-box .info-item {
+        padding: 1rem;
+      }
+      .info-box .info-item h2 {
+        font-size: 2rem;
+      }
+      .info-box .info-item p, a {
+        font-size: 1.5rem;
+      }
+    }
+
+  /* Courses */
+  .courses-wrap {
+    position: relative;
+    top: 4rem;
+  }
+  .learning {
+    max-width: 1080px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .learning h2 {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 0 0;
+  }
+  .courses {
+    flex-direction: row;
+    padding: 1rem 3.5rem;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .course {
+    width: 25%;
+    height: auto;
+    overflow: hidden;
+    margin: 1rem;
+    filter: grayscale(50%);
+    opacity: 0.8;
+    transition: all 350ms linear 20ms;
+    background-color: hsl(0, 0%, 95%);
+  }
+  .course:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .course img {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .course .course-info {
+    padding: 1rem 1rem 1.5rem;
+  }
+  .course-info h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .course-info h3 {
+    padding: 0.5rem 0 1rem;
+  }
+
+    /* Courses - Mobile */
+    @media only screen and (max-width: 620px) {
+      .info .sidebar {
+        padding-bottom: 0;
+      }
+      .learning {
+        padding: 1rem 1rem 2rem;
+      }
+      .learning h2 {
+        padding: 1rem;
+      }
+      .courses {
+        flex-flow: column nowrap;
+        padding: 0;
+        align-items: center;
+        width: 100%;
+      }
+      .course {
+        width: 50%;
+        padding: 0.25rem;
+      }
+      .course:hover {
+        height: auto;
+        filter: grayscale(0%);
+        opacity: 1;
+        background-color: hsl(0, 0%, 100%);
+      }
+      .course .course-info {
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 1rem 0;
+        width: 100%;
+      }
+      .course-info h2 {
+        padding: unset;
+      }
+      .course img,
+      .course h3,
+      .course p {
+        display: none;
+      }
+    }
