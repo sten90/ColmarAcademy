@@ -472,7 +472,7 @@ header nav a.text:focus {
       border-radius: 0;
       opacity: 1;
       background-color: hsl(0, 0%, 100%);
-    }s
+    }
     .research-sidebar .research-item img {
       width: 35%;
       height: auto;
@@ -509,3 +509,39 @@ header nav a.text:focus {
           padding-bottom: 1.5rem;
         }
       }
+
+
+
+      /* Footer */
+      .footer-wrap {
+        position: relative;
+        top: 4rem;
+        border-top: 1px solid lightgray;
+      }
+      footer {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 1rem 1.5rem;
+        height: 3rem;
+      }
+      footer p {
+        display: inline;
+      }
+      footer a {
+        padding: 0 0.25rem;
+        float: right;
+        text-decoration-line: none;
+        color: hsl(0, 0%, 30%);
+      }
+      footer a:hover {
+        color: hsl(0, 0%, 10%);
+      }
+        /* Footer - Mobile */
+        @media only screen and (max-width: 620px) {
+          footer {
+            height: unset;
+          }
+          footer a {
+            display: none;
+          }
+        }
